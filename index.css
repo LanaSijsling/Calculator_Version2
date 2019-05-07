@@ -48,6 +48,12 @@ body {
   background-color: antiquewhite;
 }
 
+.input {
+  margin-top: 5px;
+  padding-top: 5px;
+  text-align: right;
+}
+
 .result::before {
   width: 250px;
   height: 30px;
