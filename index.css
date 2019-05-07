@@ -1,1 +1,72 @@
+body {
+  margin: 10px;
+}
 
+#item1 {grid-area: input;}
+#item2 {grid-area: result;}
+#item3 {grid-area: one;}
+#item4 {grid-area: two;}
+#item5 {grid-area: three;}
+#item6 {grid-area: plus;}
+#item7 {grid-area: four;}
+#item8 {grid-area: five;}
+#item9 {grid-area: six;}
+#item10 {grid-area: min;}
+#item11 {grid-area: seven;}
+#item12 {grid-area: eight;}
+#item13 {grid-area: nine;}
+#item14 {grid-area: deel;}
+#item15 {grid-area: decim;}
+#item16 {grid-area: null;}
+#item17 {grid-area: clear;}
+#item18 {grid-area: multi;}
+#item19 {grid-area: eq;}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+    'input input input input'
+    'result result result result'
+    'one two three plus'
+    'four five six min'
+    'seven eight nine deel'
+    'decim null clear multi'
+    'eq eq eq eq';
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+  background-color: blueviolet;
+  width: 250px;
+}
+
+.input, .result {
+  width: 230px;
+  height: 30px;
+  margin-left: 5px;
+  padding-left: 5px;
+  margin-right: 5px;
+  padding-right: 5px;
+  background-color: antiquewhite;
+}
+
+.result::before {
+  width: 250px;
+  height: 30px;
+  background-color: antiquewhite;
+  content: "="; 
+}
+
+.num-btn, .sym-btn, .ce-btn {
+  background-color: black;
+  color: beige;
+  width: 50px;
+  height: 40px;
+  margin: 5px;
+}
+
+.eq-btn {
+  background-color: black;
+  color: beige;
+  width: 242px;
+  height: 40px;
+  margin: 5px;
+}
