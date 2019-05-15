@@ -26,7 +26,7 @@
         <button id="item14" onclick="push('/')" class="sym-btn">/</button>
         <button id="item15" onclick="push('.')" class="sym-btn">.</button>
         <button id="item16" onclick="push(0)" class="num-btn">0</button>
-        <button id="item18" class="ce-btn">CE</button>
+        <button id="item18" onclick="empty()" class="ce-btn">CE</button>
         <button id="item18" onclick="push('*')" class="sym-btn">*</button>
         <button id="item19" onclick="calculate()" class="eq-btn">=</button>
       </div>
@@ -52,6 +52,11 @@
     
     function clean(elem) {
       elem.innerHTML = "";
+    }
+
+    function empty(){
+      input.innerHTML = "";
+      result.innerHTML = "";
     }
 
 
